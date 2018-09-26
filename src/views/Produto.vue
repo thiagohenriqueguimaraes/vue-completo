@@ -1,6 +1,5 @@
 <template>
   <div class="produto">
-    <Produto titulo="Olá vamos controlar os Produtos"/>
   </div>
 </template>
 
