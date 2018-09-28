@@ -2,31 +2,35 @@
   <div id="app">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Vue</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault"></div>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-                  <router-link class="nav-link" to="/">Home</router-link> |
-            <!-- <a class="nav-link" href="\">Home <span class="sr-only">(current)</span></a> -->
+             <router-link class="nav-link" to="/"><span class="sr-only">(current)</span>Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="\about">About</a>
+            <router-link class="nav-link" to="/about">Sobre</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/produto">Produtos</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="btn btn-sm btn-light" to="/login">Log in</router-link>
           </li>
         </ul>
-      </div>
     </nav>
+    <router-view/>
 
 
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link class="nav-link" to="/">Home</router-link> |
       <router-link to="/about">Sobre</router-link> |
       <router-link to="/produto">Produtos</router-link>
     </div>
-    <router-view/>
+    <router-view/> -->
   </div>
 </template>
 

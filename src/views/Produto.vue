@@ -1,42 +1,42 @@
-<template>
-  <div class="produto">
-    <h1>Lista de produtos</h1>
+<template>  
+  <div class="container produto">
+    <p class="lead">
+          <h1>Lista de produtos</h1>
     <div class="row">
       <div class="col-md-12">
         <table style="width:100%">
-              <tr>
-                <th>Códito</th>
-                <th>Nome</th> 
-              </tr>
-              <tbody>
-                <gridProduto
-                  v-for="p in [{ id: 1, name: 'A' },{ id: 2, name: 'B' }, { id: 3, name: 'C' }]"
-                  v-bind:key="p.id"
-                  v-bind:p="p"
-                ></gridProduto>
-              </tbody> 
-
-            </table>
+          <tr>
+            <th>Códito</th>
+            <th>Nome</th> 
+          </tr>
+          <tbody>
+            <gridProduto
+              v-for="p in [{ id: 1, name: 'A' },{ id: 2, name: 'B' }, { id: 3, name: 'C' }]"
+              v-bind:key="p.id"
+              v-bind:p="p"
+            ></gridProduto>
+          </tbody> 
+        </table>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <table style="width:100%">
-              <tr>
-                <th>Código</th>
-                <th>Nome</th> 
-              </tr>
-              <tbody>
-                <tr v-for="x in xs">
-                  <td>{{x.y}}</td>
-                  <td></td>                  
-                </tr>
-              </tbody> 
-
-            </table>
+          <tr>
+            <th>Código</th>
+            <th>Nome</th> 
+          </tr>
+          <tbody>
+            <tr v-for="x in xs">
+              <td>{{x.y}}</td>
+              <td></td>                  
+            </tr>
+          </tbody> 
+        </table>
       </div>
-    </div>
-    
+    </div>  
+    </p>
+    <!-- Content here -->
   </div>
 </template>
 
